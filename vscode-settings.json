@@ -1,0 +1,133 @@
+{
+  "workbench.iconTheme": "material-icon-theme",
+  "files.autoSave": "afterDelay",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.useEditorConfig": false,
+  "prettier.configPath": ".prettierrc",
+  "prettier.printWidth": 120,
+  "editor.wordWrapColumn": 10,
+  "editor.inlayHints.fontSize": 2,
+  "typescript.inlayHints.enumMemberValues.enabled": true,
+  "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "typescript.inlayHints.parameterTypes.enabled": true,
+  "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
+  "typescript.inlayHints.variableTypes.enabled": true,
+
+  "editor.semanticHighlighting.enabled": true,
+
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": ["${env:windir}\\Sysnative\\cmd.exe", "${env:windir}\\System32\\cmd.exe"],
+      "args": [],
+      "icon": {
+        "id": "terminal-cmd"
+      }
+    },
+    "Git Bash": {
+      "path": "C:\\Program Files\\Git\\bin\\bash.exe",
+      "args": ["--login", "-i"]
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "workbench.settings.applyToAllProfiles": [],
+
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": ["comment", "punctuation.definition.comment"],
+        "settings": { "foreground": "#928374", "fontStyle": "italic" }
+      },
+      {
+        "scope": ["string", "punctuation.definition.string"],
+        "settings": { "foreground": "#b8bb26" }
+      },
+      {
+        "scope": [
+          "keyword",
+          "storage.type",
+          "storage.modifier",
+          "keyword.control",
+          "variable.language.this",
+          "constant.language.boolean",
+          "constant.language.null"
+        ],
+        "settings": { "foreground": "#fb4934" }
+      },
+      {
+        "scope": ["constant.numeric"],
+        "settings": { "foreground": "#fb4934" }
+      },
+      {
+        "scope": [
+          "entity.name.type",
+          "entity.name.type.class",
+          "entity.name.type.interface",
+          "entity.name.type.enum",
+          "support.type",
+          "support.class"
+        ],
+        "settings": { "foreground": "#fb4934" }
+      },
+      {
+        "scope": ["entity.name.function", "support.function", "entity.name.function.method"],
+        "settings": { "foreground": "#fabd2f" }
+      },
+      {
+        "scope": [
+          "variable",
+          "variable.other",
+          "variable.other.readwrite",
+          "variable.other.object",
+          "variable.parameter",
+          "meta.definition.variable"
+        ],
+        "settings": { "foreground": "#f9bc2f" }
+      },
+      {
+        "scope": ["variable.other.constant", "constant.other"],
+        "settings": { "foreground": "#d79921" }
+      },
+      {
+        "scope": ["meta.decorator", "meta.annotation", "entity.name.tag.decorator"],
+        "settings": { "foreground": "#8ec07c" }
+      }
+    ]
+  },
+
+  "editor.semanticTokenColorCustomizations": {
+    "enabled": true,
+    "rules": {
+      "keyword": "#fb4934",
+      "modifier": "#fb4934",
+      "operator": "#fb4934",
+
+      "string": "#b8bb26",
+      "comment": "#928374",
+      "number": "#fb4934",
+
+      "function": "#fabd2f",
+      "method": "#fabd2f",
+      "macro": "#fabd2f",
+
+      "class": "#fabd2f",
+      "interface": "#fabd2f",
+      "type": "#fabd2f",
+      "enum": "#fabd2f",
+      "namespace": "#fabd2f",
+
+      "variable": "#a9b7c6",
+      "property": "#83a598",
+      "parameter": "#83a598",
+
+      "enumMember": "#83a598",
+      "decorator": "#ffffff"
+    }
+  }
+}
