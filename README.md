@@ -23,3 +23,8 @@ This repo contains a `vscode-settings.json` file with my VS Code **code color** 
 
 - These settings focus on **code highlighting** (comments/strings/keywords/functions/types).
 - If you already have settings, merge them carefully to keep valid JSON (commas, braces).
+
+## Preview
+
+![Example 1](screenshots/example1.png)
+![Example 2](screenshots/example2.png)
